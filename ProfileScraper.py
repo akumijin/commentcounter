@@ -9,3 +9,4 @@ class ProfileScraper:
         soup = BeautifulSoup(response.text, 'html.parser')
         username = soup.select_one('.profile-username-selector').text  # Placeholder selector
         return username.strip()
+        
